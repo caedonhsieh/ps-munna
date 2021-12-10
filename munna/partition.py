@@ -4,7 +4,7 @@
 import argparse
 import json
 
-import NAME
+import munna
 
 
 ###############################################################################

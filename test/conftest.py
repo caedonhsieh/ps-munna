@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-import NAME
+import munna
 
 
 TEST_ASSETS_DIR = Path(__file__).parent / 'assets'

@@ -4,7 +4,7 @@
 import argparse
 from pathlib import Path
 
-import NAME
+import munna
 
 
 ###############################################################################

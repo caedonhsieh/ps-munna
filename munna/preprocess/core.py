@@ -1,7 +1,7 @@
 """core.py - data preprocessing"""
 
 
-import NAME
+import munna
 
 
 ###############################################################################
