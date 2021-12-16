@@ -43,7 +43,7 @@ def dataset_to_file(name):
             The name of the dataset
     """
     # Create output directory
-    output_directory = NAME.ASSETS_DIR / name
+    output_directory = munna.ASSETS_DIR / name
     output_directory.mkdir(exist_ok=True, parents=True)
 
     # Write partition file

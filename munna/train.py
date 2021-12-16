@@ -23,7 +23,7 @@ def main():
     logger = pl.loggers.TensorBoardLogger('logs', name=Path().parent.name)
 
     # Setup data
-    datamodule = NAME.DataModule(args.dataset,
+    datamodule = munna.DataModule(args.dataset,
                                  args.batch_size,
                                  args.num_workers)
 
@@ -31,7 +31,7 @@ def main():
     trainer = pl.Trainer.from_argparse_args(args, logger=logger)
 
     # Train
-    trainer.fit(NAME.Model(args), datamodule=datamodule)
+    trainer.fit(munna.Model(args), datamodule=datamodule)
 
 
 def parse_args():
@@ -57,7 +57,7 @@ def parse_args():
              'cpu cores.')
 
     # Add model arguments
-    parser = NAME.Model.add_model_specific_args(parser)
+    parser = munna.Model.add_model_specific_args(parser)
 
     # Add trainer arguments
     parser = pl.Trainer.add_argparse_args(parser)

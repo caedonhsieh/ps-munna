@@ -7,15 +7,15 @@ with open('README.md') as file:
 
 # TODO - replace with details of your project
 setup(
-    name='NAME',
-    description='DESCRIPTION',
+    name='munna',
+    description='Pokemon Showdown MatchUp Neural Network Analysis',
     version='0.0.1',
-    author='AUTHOR',
-    author_email='EMAIL',
-    url='https://github.com/USERNAME/NAME',
+    author='Caedon Hsieh',
+    author_email='caedonhsieh@gmail.com',
+    url='https://github.com/caedonhsieh/ps-munna',
     install_requires=['pytorch-lightning'],
-    packages=['NAME'],
-    package_data={'NAME': ['assets/*']},
+    packages=['munna'],
+    package_data={'munna': ['assets/*']},
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords=[],

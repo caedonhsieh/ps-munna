@@ -1,4 +1,4 @@
-"""__main__.py - entry point for NAME.infer"""
+"""__main__.py - entry point for munna.infer"""
 
 
 import argparse
@@ -22,4 +22,4 @@ def parse_args():
 
 
 if __name__ == '__main__':
-    NAME.infer.from_file_to_file(**vars(parse_args()))
+    munna.infer.from_file_to_file(**vars(parse_args()))

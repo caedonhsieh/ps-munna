@@ -16,16 +16,16 @@ TEST_ASSETS_DIR = Path(__file__).parent / 'assets'
 @pytest.fixture(scope='session')
 def dataset():
     """Preload the dataset"""
-    return NAME.Dataset('DATASET', 'valid')
+    return munna.Dataset('DATASET', 'valid')
 
 
 @pytest.fixture(scope='session')
 def datamodule():
     """Preload the datamodule"""
-    return NAME.DataModule('DATASET', batch_size=4, num_workers=0)
+    return munna.DataModule('DATASET', batch_size=4, num_workers=0)
 
 
 @pytest.fixture(scope='session')
 def model():
     """Preload the model"""
-    return NAME.Model()
+    return munna.Model()

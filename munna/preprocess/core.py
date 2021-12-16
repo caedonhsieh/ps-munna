@@ -23,8 +23,8 @@ def dataset(name):
     else:
         raise ValueError(f'Dataset {name} is not implemented')
 
-    input_directory = NAME.DATA_DIR / name
-    output_directory = NAME.CACHE_DIR / name
+    input_directory = munna.DATA_DIR / name
+    output_directory = munna.CACHE_DIR / name
 
     # TODO - Perform preprocessing
     raise NotImplementedError

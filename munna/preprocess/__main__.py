@@ -1,4 +1,4 @@
-"""__main__.py - entry point for NAME.preprocess"""
+"""__main__.py - entry point for munna.preprocess"""
 
 
 import argparse
@@ -21,4 +21,4 @@ def parse_args():
 
 
 if __name__ == '__main__':
-    NAME.preprocess.dataset(**vars(parse_args()))
+    munna.preprocess.dataset(**vars(parse_args()))

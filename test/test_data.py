@@ -7,7 +7,7 @@ def test_dataset(dataset):
     """Shape test for the dataset __getitem__ function
 
     Arguments
-        dataset - NAME.Dataset
+        dataset - munna.Dataset
             The validation dataset
     """
     # Get an item from the dataset

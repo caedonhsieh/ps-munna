@@ -7,7 +7,7 @@ def test_model(model, datamodule):
     """Shape test for the forward pass
 
     Arguments
-        model - NAME.Model
+        model - munna.Model
             The model to test
         datamodule - PyTorch Lightning DataModule
             The data to use for the test

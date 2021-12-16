@@ -163,7 +163,7 @@ class Metadata(abc.ABC):
             file - Path
                 The partition file
         """
-        return NAME.ASSETS_DIR / 'partition' / f'{cls.name}.json'
+        return munna.ASSETS_DIR / 'partition' / f'{cls.name}.json'
 
     @classmethod
     def partitions(cls):

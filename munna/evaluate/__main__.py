@@ -1,4 +1,4 @@
-"""__main__.py - entry point for NAME.evaluate"""
+"""__main__.py - entry point for munna.evaluate"""
 
 
 import argparse
@@ -40,10 +40,10 @@ def main():
     args = parse_args()
 
     # Setup model
-    model = NAME.Model.load_from_checkpoint(args.checkpoint)
+    model = munna.Model.load_from_checkpoint(args.checkpoint)
 
     # Evaluate
-    NAME.evaluate.dataset_to_file(args.dataset,
+    munna.evaluate.dataset_to_file(args.dataset,
                                   args.partition,
                                   model,
                                   args.file)

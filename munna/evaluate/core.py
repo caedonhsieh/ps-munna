@@ -27,10 +27,10 @@ def dataset(name, partition, model):
             serializable.
     """
     # Get stems for this partition
-    stems = NAME.data.partitions(name)[partition]
+    stems = munna.data.partitions(name)[partition]
 
     # Resolve stems to filenames
-    files = [NAME.data.stem_to_file(name, stem) for stem in stems]
+    files = [munna.data.stem_to_file(name, stem) for stem in stems]
 
     # Partition files
     return from_files(model, files)
@@ -44,7 +44,7 @@ def dataset_to_file(name, partition, model, file):
             The name of the dataset
         partition - string
             The partition to evaluate
-        model - NAME.Model
+        model - munna.Model
             The model to evaluate
         file - Path
             The json file to save results to
@@ -57,7 +57,7 @@ def from_files(model, files):
     """Evaluate files
 
     Arguments
-        model - NAME.Model
+        model - munna.Model
             The model to evaluate
         files - list(string)
             The files to evaluate
